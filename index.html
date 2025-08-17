@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinnacle Maths | Elite Dark-Mode Coaching in Pimpri-Chinchwad</title>
+  <meta name="description" content="Elite dark-mode mathematics tuitions for Classes 8–12, JEE/NEET foundation, and Olympiads in Pimpri-Chinchwad. Interactive, personalized, results-focused.">
+  <meta name="keywords" content="maths tuition Pimpri-Chinchwad, dark mode website, JEE foundation, CBSE ICSE HSC, calculus algebra geometry, Olympiad coaching">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pinnacle Maths">
+  <meta property="og:description" content="Mathematics that clicks—interactive dark-mode coaching.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR_GITHUB_USERNAME.github.io/REPO_NAME/">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Inter variable + Fraunces for display -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background layers -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="bg-gradients" aria-hidden="true">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="grid-noise"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Pinnacle Maths home">
+        <img src="assets/logo.svg" alt="Pinnacle Maths" class="logo">
+        <span class="brand-text">Pinnacle Maths</span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-sm magnetic">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <progress class="scroll-progress" id="scrollProgress" max="100" value="0" aria-hidden="true"></progress>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container grid-2 hero-inner">
+      <div class="hero-copy">
+        <h1 class="display">
+          <span class="accent">Master</span> Mathematics.
+          <span class="sub-accent">Confidently.</span>
+        </h1>
+        <p class="lede">Interactive, concept-first coaching for Classes 8–12, JEE/NEET foundation, and Olympiad prep in Pimpri-Chinchwad—engineered for clarity and speed.</p>
+        <div class="cta">
+          <a class="btn btn-lg magnetic" href="#contact">Book Free Demo</a>
+          <a class="btn btn-outline btn-lg magnetic" href="https://wa.me/91YOURNUMBER?text=Hi%20I%27m%20interested%20in%20Maths%20tuition">WhatsApp</a>
+        </div>
+        <ul class="badges">
+          <li>Daily doubts</li>
+          <li>Weekly tests</li>
+          <li>Parent reports</li>
+        </ul>
+      </div>
+      <div class="hero-visual tilt" data-tilt>
+        <img src="assets/hero-illustration.svg" alt="Interactive math illustration">
+      </div>
+    </div>
+    <div class="hero-metrics container">
+      <div class="metric card glass tilt">
+        <div class="metric-value" data-count="94">0</div>
+        <div class="metric-label">Avg. Board Score</div>
+      </div>
+      <div class="metric card glass tilt">
+        <div class="metric-value" data-count="1200">0</div>
+        <div class="metric-label">Practice Problems</div>
+      </div>
+      <div class="metric card glass tilt">
+        <div class="metric-value" data-count="7">0</div>
+        <div class="metric-label">Years Experience</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="highlights">
+    <div class="container cards">
+      <article class="card glass feature tilt">
+        <div class="icon">∑</div>
+        <h3>Concept → Speed</h3>
+        <p>From first principles to exam shortcuts—transferable problem-solving.</p>
+      </article>
+      <article class="card glass feature tilt">
+        <div class="icon">ƒ(x)</div>
+        <h3>Adaptive Practice</h3>
+        <p>Smart sets that scale difficulty with progress and error patterns.</p>
+      </article>
+      <article class="card glass feature tilt">
+        <div class="icon">π</div>
+        <h3>Clarity First</h3>
+        <p>Visual intuition before formulae—retain more, panic less.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container grid-2">
+      <div class="about-copy">
+        <h2>About the Tutor</h2>
+        <p>I’m <strong>YOUR NAME</strong>, a mathematics educator based in Pimpri-Chinchwad with <strong>7+ years</strong> of results-driven coaching across CBSE, ICSE, and HSC boards.</p>
+        <ul class="list">
+          <li>Classes 8–12, JEE/NEET foundation</li>
+          <li>Olympiad & NTSE mentoring</li>
+          <li>Weekly analytics and parent reviews</li>
+        </ul>
+      </div>
+      <div class="about-card card glass tilt">
+        <h3>Teaching Philosophy</h3>
+        <p>Build deep understanding with proofs and patterns, then accelerate with exam-strategy drills and time-bound mocks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses with Filter -->
+  <section class="courses" id="courses">
+    <div class="container">
+      <h2>Courses</h2>
+      <div class="course-filter">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="core">Core 8–10</button>
+        <button class="chip" data-filter="adv">Class 11–12</button>
+        <button class="chip" data-filter="jee">JEE/NEET</button>
+        <button class="chip" data-filter="olymp">Olympiad</button>
+      </div>
+      <div class="course-grid">
+        <article class="course card glass tilt" data-cat="core">
+          <h3>Class 8–10 Core</h3>
+          <p>Algebra, Geometry, Mensuration, Statistics, Trigonometry basics.</p>
+          <ul class="tags"><li>CBSE</li><li>ICSE</li><li>SSC</li></ul>
+        </article>
+        <article class="course card glass tilt" data-cat="adv">
+          <h3>Class 11–12 Advanced</h3>
+          <p>Functions, Limits, Calculus, Vectors, Probability, Complex Numbers.</p>
+          <ul class="tags"><li>CBSE</li><li>HSC</li></ul>
+        </article>
+        <article class="course card glass tilt" data-cat="jee">
+          <h3>JEE/NEET Foundation</h3>
+          <p>Pattern-based drills and speed-building with error analysis.</p>
+          <ul class="tags"><li>Mocks</li><li>Shortcuts</li><li>Analysis</li></ul>
+        </article>
+        <article class="course card glass tilt" data-cat="olymp">
+          <h3>Olympiad & NTSE</h3>
+          <p>Contest-style problem solving and enrichment sets.</p>
+          <ul class="tags"><li>Problem sets</li><li>Past papers</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Estimator -->
+  <section class="pricing" id="pricing">
+    <div class="container grid-2">
+      <div>
+        <h2>Pricing Estimator</h2>
+        <p>Estimate monthly fees. Final fees vary by batch size and schedule.</p>
+        <div class="estimator card glass">
+          <label class="slider">
+            <span>Classes per Week: <strong id="sessionsVal">3</strong></span>
+            <input type="range" min="2" max="6" value="3" id="sessions">
+          </label>
+          <label class="slider">
+            <span>Duration per Class (min): <strong id="minutesVal">90</strong></span>
+            <input type="range" min="60" max="120" step="15" value="90" id="minutes">
+          </label>
+          <label class="select">
+            <span>Batch Size</span>
+            <select id="batch">
+              <option value="1">1:1</option>
+              <option value="3" selected>1:3</option>
+              <option value="6">1:6</option>
+            </select>
+          </label>
+          <div class="estimate">
+            <div class="estimate-label">Estimated Monthly</div>
+            <div class="estimate-value" id="estimate">₹4,500</div>
+          </div>
+          <button class="btn magnetic" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Proceed to Book</button>
+        </div>
+      </div>
+      <div class="pricing-notes card glass tilt">
+        <h3>What affects fees?</h3>
+        <ul class="list">
+          <li>Board & class level</li>
+          <li>Topics complexity and goals</li>
+          <li>Batch size and schedule</li>
+        </ul>
+        <p class="muted">Ask for scholarships based on merit and need.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2>What Students Say</h2>
+      <div class="carousel">
+        <button class="carousel-nav prev" aria-label="Previous">‹</button>
+        <div class="carousel-track">
+          <figure class="testimonial card glass">
+            <blockquote>Scored 94 in Boards after consistent weekly tests and doubt sessions.</blockquote>
+            <figcaption>— Aditi, Class 10</figcaption>
+          </figure>
+          <figure class="testimonial card glass">
+            <blockquote>Calculus finally made sense. Jumped from 55 to 82 in two months.</blockquote>
+            <figcaption>— Rohan, Class 12</figcaption>
+          </figure>
+          <figure class="testimonial card glass">
+            <blockquote>Clear explanations and patient guidance. Strongly recommend.</blockquote>
+            <figcaption>— Parent of Class 9 student</figcaption>
+          </figure>
+        </div>
+        <button class="carousel-nav next" aria-label="Next">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2>FAQs</h2>
+      <details>
+        <summary>Where are classes conducted?</summary>
+        <p>Online + Offline (Pimpri-Chinchwad). Address shared upon enrollment.</p>
+      </details>
+      <details>
+        <summary>What are the batch sizes?</summary>
+        <p>1:1, 1:3, and 1:6 formats to ensure attention and interaction.</p>
+      </details>
+      <details>
+        <summary>Do you provide notes and tests?</summary>
+        <p>Yes—topic notes, weekly tests, and performance reports.</p>
+      </details>
+      <details>
+        <summary>How to book a free demo?</summary>
+        <p>Use the contact form below or WhatsApp to propose a time slot.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container grid-2">
+      <div>
+        <h2>Contact</h2>
+        <p>Want a free demo? Reach out.</p>
+        <ul class="contact-list">
+          <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+          <li><strong>Email:</strong> yourname@email.com</li>
+          <li><strong>Location:</strong> Pimpri-Chinchwad, Maharashtra</li>
+          <li><strong>WhatsApp:</strong> +91-XXXXXXXXXX</li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" class="chip">Instagram</a>
+          <a href="#" aria-label="YouTube" class="chip">YouTube</a>
+          <a href="#" aria-label="Facebook" class="chip">Facebook</a>
+        </div>
+      </div>
+      <form class="form card glass" action="mailto:yourname@email.com" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input type="text" name="Name" required>
+        </label>
+        <label>
+          Phone
+          <input type="tel" name="Phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="Email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="Message" rows="5" required></textarea>
+        </label>
+        <button class="btn magnetic" type="submit">Send</button>
+        <p class="form-note">Submitting opens your email app. For instant replies, use WhatsApp.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Pinnacle Maths Tuitions · All rights reserved.</p>
+      <a href="#top" class="to-top chip" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <!-- <script defer data-domain="yourdomain.github.io" src="https://plausible.io/js/script.js"></script> -->
+</body>
+</html>
